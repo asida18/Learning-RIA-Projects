@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<style>
+	  		.movingDiv{
+      			width:250px;
+      			height:250px;
+      			background-color:rgb(255,0,0);
+      			border-radius: 130px;
+      			-ms-transition: margin 500ms;
+      			-moz-transition: margin 500ms;
+      			-o-transition: margin 500ms;
+      			-webkit-transition: margin 500ms;
+      			transition: margin 500ms;
+  			}
+  	
+  	 		.changedDiv{
+      			width:250px;
+      			height:250px;
+      			background-color:rgb(0,200,0);
+      			border-radius: 130px;
+      			-ms-transition: margin 500ms;
+      			-moz-transition: margin 500ms;
+      			-o-transition: margin 500ms;
+      			-webkit-transition: margin 500ms;
+      			transition: margin 500ms;
+  			}
+  
+  	  		.movingDiv:hover{
+      			margin: 200px 0px 0px 0px;
+
+  			}
+	
+		</style>	
+		
+
+	</head>
+
+
+	<body>
+		<div class ="movingDiv"></div>
+		
+		
+	</body>
+	
+	
+	<script>
+		
+			var color = document.querySelector('.movingDiv');
+			
+			color.addEventListener('click',function(e){
+				color.classList.toggle('changedDiv')
+				
+					
+				}
+			);
+			
+	</script>
+	
+
+</html>
