@@ -1,53 +1,36 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
 
 	<head>
-		<style>
-			body {
-				background-color: gray;
-			}
-		</style>
-		
-		<script>
-			window.onload = function(e){
-		
-				var myVideo = document.querySelector('#video1');
-				var myAudio = document.querySelector('#audio1');
-			
-			function playPause(){
-				if(myVideo.paused)
-					myVideo.play();
-				else
-					myVideo.pause();
-			    }
-			}
-		</script>	
+        <link rel="stylesheet" type = "text/css" href="vidaud.css">
+	    <script type="text/javascript" src="vidaud.js"></script> 
+	    <title>Media and Audio Player</title>
 	</head>
 	
-	<body>
-		<video id="video1" width="560" height="340">
-  				<source src="h2Ochallenge.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-		</video>
-		<div style = "text-align:center">
-				<button onclick = "playPause()"> Play/Pause </button>
-				<button onclick = "volumeUpV()" > V+ </button>
-				<button onclick = "volumeDownV()" > V- </button>
-		</div>
-		
-		<div style = "text-align:center">
-			<audio id="audio1" >	
+	<body class = "bg">
+		<video id="video1" height = "350" width = "550">
+  				<source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+  		</video>
+  		<div id = "controls" style="text-align:center"> 
+  		    <!-- These buttons are for VIDEO only -->
+  		    <button id = "play">Play Video</button>
+  		    <button id = "pause">Pause Video</button>
+  		    <button id = "volumeUp"> V+ </button>
+  		    <button id = "volumeDown"> V-</button>
+  		    <!-- These buttons are for AUDIO only -->
+  		    <br>
+  		    <br>
+		<audio id="audio1">	
   				<source src="HelenaBeat.mp3" type="audio/mpeg">
   				Your browser does not support the audio tag.
-  			</audio>
-				<br>
-				<button onclick = "playPauseA()" > Play/Pause </button>
-				<button onclick = "volumeUpA()" > V+ </button>
-				<button onclick = "volumeDownA()" > V- </button>
-		</div> 	
+  		</audio>
+  		    <button id = "playA">Play Audio</button>
+  		    <button id = "pauseA">Pause Audio</button>
+  		    <button id = "volumeUpA"> V+ </button>
+  		    <button id = "volumeDownA"> V-</button>
+  		</div>
+
 	</body>
 	
-	
-
-
 </html>

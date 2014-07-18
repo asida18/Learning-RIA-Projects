@@ -1,0 +1,46 @@
+	        .bg {
+				background-color: white;
+			}
+			
+			
+			.bgChangeone {
+			    background-color: green;
+			}
+			
+			.bgChangetwo {
+			    background-color: purple;
+			}
+			
+			.bgChangethree {
+			    background-color:yellow;
+			}
+			
+			.bgChangefour {
+			    background-color:black;
+			}
+			
+			
+		
+			.bgAChangeone {
+			    background-color:red ;
+			}
+			
+			.bgAChangetwo {
+			    background-color:orange ;
+			}
+			
+			.bgAChangethree {
+			    background-color:gray ;
+			}
+			
+			.bgAChangefour {
+			    background-color:pink;
+			}
+			
+			#video1 {
+			    
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+			
