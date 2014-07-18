@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<style>
+			body {
+				background-color: gray;
+			}
+		</style>
+		
+		<script>
+			window.onload = function(e){
+		
+				var myVideo = document.querySelector('#video1');
+				var myAudio = document.querySelector('#audio1');
+			
+			function playPause(){
+				if(myVideo.paused)
+					myVideo.play();
+				else
+					myVideo.pause();
+			    }
+			}
+		</script>	
+	</head>
+	
+	<body>
+		<video id="video1" width="560" height="340">
+  				<source src="h2Ochallenge.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+		</video>
+		<div style = "text-align:center">
+				<button onclick = "playPause()"> Play/Pause </button>
+				<button onclick = "volumeUpV()" > V+ </button>
+				<button onclick = "volumeDownV()" > V- </button>
+		</div>
+		
+		<div style = "text-align:center">
+			<audio id="audio1" >	
+  				<source src="HelenaBeat.mp3" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+  			</audio>
+				<br>
+				<button onclick = "playPauseA()" > Play/Pause </button>
+				<button onclick = "volumeUpA()" > V+ </button>
+				<button onclick = "volumeDownA()" > V- </button>
+		</div> 	
+	</body>
+	
+	
+
+
+</html>
