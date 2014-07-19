@@ -4,7 +4,7 @@
     	       function (e){
     	           var video = document.getElementById('video1');
     	           var audio = document.getElementById('audio1');
-    	           var background = document.querySelector('.bg');
+    	           var background = document.querySelector('body');
     	           switch(e.target.id){
     	               
     	               case 'play':

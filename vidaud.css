@@ -1,8 +1,15 @@
-	        .bg {
-				background-color: white;
-			}
-			
-			
+            body {
+                background-color: white;
+                min-width:100%;
+                min-height:100%;
+                margin:0;
+                transition:background-color 500ms;
+            }
+            
+            body *{
+                position:relative;
+            }
+
 			.bgChangeone {
 			    background-color: green;
 			}
